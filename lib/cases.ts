@@ -1,15 +1,15 @@
 export type Case = { slug: string; name: string; tagline: string; link: string; role: string; timeline: string; problem: string[]; approach: string[]; stack: string[]; flow: string[]; impact: string[]; next: string; ahead?: string[]; highlight?: string };
 export const cases: Record<string, Case> = {
   edurown: {
-    slug: "edurown", name: "Edurown", tagline: "Academic writing, without the middleman.", link: "https://edurown.vercel.app/", role: "Founder & Lead", timeline: "2024 - Present",
+    slug: "edurown", name: "Edurown", tagline: "Consulting that stays direct.", link: "https://edurown.vercel.app/", role: "Founder & Lead", timeline: "2024 - Present",
     problem: [
-      "The academic support industry is built on layers. Clients pay a premium, writers see a fraction of it, and quality drops every time work passes through another hand. Edurown removes every layer between the two: direct communication, fair pay, and consistent quality from start to finish.",
-      "Bidding pools push work toward the cheapest offer instead of the best fit, and students rarely know who is actually doing the work. Writers carry the cost of that opacity.",
+      "People who need research, data or technical help often move through layers of intermediaries, with unclear scope and prices that don't match the work. Edurown keeps it direct: one consultant, clear scope, fair pricing.",
+      "Clarity matters as much as the output. When you know who is doing the work, what is included, and what it costs, the working relationship is better for everyone.",
     ],
-    approach: ["Connect students directly with expert writers, with no middlemen and no bidding pools", "Pay writers fairly by removing the intermediary layers", "Design the full product myself: brand, site, and service workflow", "Build on a modern SSR stack: React 19, TanStack Start and Router, Tailwind v4, shadcn/ui, Nitro", "Ship and host on Vercel"],
+    approach: ["Offer consulting in research, data analysis and technical content, delivered one-to-one", "Keep scope, timelines and pricing clear from the start", "Design the full product myself: brand, site, and service workflow", "Build on a modern SSR stack: React 19, TanStack Start and Router, Tailwind v4, shadcn/ui, Nitro", "Ship and host on Vercel"],
     stack: ["React 19", "TanStack Start", "TanStack Router", "Tailwind v4", "shadcn/ui", "Nitro"],
     flow: ["Client", "TanStack Start (SSR)", "Nitro server", "Vercel"],
-    impact: ["Live in production, serving students and professionals worldwide", "A complete product shipped from brand to production"], next: "alphastreamtrader",
+    impact: ["Live in production, serving clients and professionals worldwide", "A complete product shipped from brand to production"], next: "alphastreamtrader",
   },
   alphastreamtrader: {
     slug: "alphastreamtrader", name: "AlphaStreamTrader", tagline: "Algorithmic trading without the API complexity.", link: "https://alphastreamtrader.vercel.app/", role: "Builder", timeline: "Live, in active development",
@@ -23,7 +23,7 @@ export const cases: Record<string, Case> = {
     impact: ["Live in production on Vercel", "Strategies, risk control, and copy trading in a single interface for retail traders"], next: "diagnosis-reporting-system",
   },
   "diagnosis-reporting-system": {
-    slug: "diagnosis-reporting-system", name: "Diagnosis Reporting System", tagline: "Bringing lab results home to farmers.", link: "", role: "Developer, IT Industrial Attachment", timeline: "2021 - 2022", highlight: "Backed by my university panel and the lab it was built for",
+    slug: "diagnosis-reporting-system", name: "Diagnosis Reporting System", tagline: "Bringing lab results home to farmers.", link: "", role: "Developer, IT Industrial Attachment", timeline: "2023", highlight: "Backed by my university panel and the lab it was built for",
     problem: [
       "While attached at the Regional Veterinary Investigation Laboratory (RVIL) in Kericho, I noticed farmers were spending a lot of money and time just to get their results. Many travelled back to the lab from places like Kisumu, Nakuru and Kisii to collect manually printed reports for the specimens they had brought in, from carcasses to dogs, cows, cats, donkeys and poultry.",
       "It was a heavy cost for a report that could reach them wherever they are. I spotted that gap and designed a solution as part of my bachelor's degree in IT at Kenya Highlands University.",

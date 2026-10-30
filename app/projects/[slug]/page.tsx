@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, ArrowUpRight, BadgeCheck, Fingerprint } from "lucide-react";
+import { ArrowRight, ArrowUpRight, BadgeCheck, BookOpen, Fingerprint } from "lucide-react";
 import { Nav } from "@/components/Nav";
 import { ScrollProgress, Reveal, ImageReveal } from "@/components/Motion";
 import { Footer } from "@/components/Sections";
@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const c = cases[(await params).slug];
   return c ? { title: `${c.name} | Stephen Mathenge Kisangi`, description: c.tagline } : {};
 }
-const covers: Record<string, string> = { edurown: "/api/img?f=projects/edurown-cover.jpg", alphastreamtrader: "/api/img?f=projects/alphastream-cover.jpg", "diagnosis-reporting-system": "/api/img?f=projects/diagnosis-cover.jpg" };
+const covers: Record<string, string> = { alphastreamtrader: "/api/img?f=projects/alphastream-cover.jpg", "diagnosis-reporting-system": "/api/img?f=projects/diagnosis-cover.jpg" };
 const mono = "font-mono text-xs uppercase tracking-wider text-accent";
 
 export default async function Case({ params }: { params: Promise<{ slug: string }> }) {
@@ -37,7 +37,7 @@ export default async function Case({ params }: { params: Promise<{ slug: string 
           <Reveal><ImageReveal src={covers[c.slug]} alt={`${c.name} screenshot`} className="aspect-[16/9]" /></Reveal>
         ) : (
           <Reveal><div className="relative grid aspect-[16/9] place-items-center overflow-hidden rounded-3xl border border-ink/10 bg-gradient-to-br from-accent/20 via-accent2/15 to-sky/20">
-            <div className="blob absolute h-48 w-48 rounded-full bg-accent/30 blur-3xl" /><Fingerprint size={72} className="float relative text-accent" />
+            <div className="blob absolute h-48 w-48 rounded-full bg-accent/30 blur-3xl" />{c.slug === "biometric-attendance" ? <Fingerprint size={72} className="float relative text-accent" /> : <BookOpen size={72} className="float relative text-accent" />}
           </div></Reveal>
         )}
         <Reveal><h2 className={mono}>The problem worth solving</h2><div className="mt-4 space-y-4 text-muted">{c.problem.map((p) => <p key={p}>{p}</p>)}</div></Reveal>

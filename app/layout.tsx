@@ -10,12 +10,12 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"], variable: "--font-poppins" });
 const jb = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jb" });
 
-const title = "Stephen Mathenge Kisangi | AI Engineer & Founder";
+const title = "Stephen Mathenge Kisangi | Technologist & Founder";
 export const metadata: Metadata = {
-  metadataBase: new URL("https://stephenkisangi.vercel.app"),
+  metadataBase: new URL("https://crowndus.vercel.app"),
   title,
-  description: "AI Engineer, founder of Edurown, and CMU Africa MSEAI '26. Building at the intersection of AI, education, and applied data.",
-  openGraph: { title, description: "Founder of Edurown. CMU Africa-bound. First-Class Honours in IT.", url: "https://stephenkisangi.vercel.app", siteName: "Stephen Kisangi", locale: "en_US", type: "website" },
+  description: "Technologist and founder of Edurown. First-Class Honours in Information Technology. Building across applied AI, data, education, and community impact.",
+  openGraph: { title, description: "Technologist and founder. First-Class Honours in Information Technology.", url: "https://crowndus.vercel.app", siteName: "Stephen Kisangi", locale: "en_US", type: "website" },
   twitter: { card: "summary_large_image", creator: "@crowndus" },
 };
 export const viewport: Viewport = { themeColor: "#f5f6fb", width: "device-width", initialScale: 1 };

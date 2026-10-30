@@ -61,8 +61,8 @@ export function Hero() {
             </motion.div>
             <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
-          <Chip Icon={GraduationCap} text="CMU Africa MSEAI '26" sub="Fall 2026 intake" className="-top-5 left-3 sm:-left-10 sm:top-8" delay="0s" />
-          <Chip Icon={Award} text="First-Class Honours" sub="BSc IT, Kenya Highlands" className="-right-2 top-[58%] sm:-right-10 sm:top-1/2" delay="-2s" />
+          <Chip Icon={GraduationCap} text="First-Class Honours" sub="BSc Information Technology" className="-top-5 left-3 sm:-left-10 sm:top-8" delay="0s" />
+          <Chip Icon={Award} text="Top of the 2024 class" sub="Computing and Information Science" className="-right-2 top-[58%] sm:-right-10 sm:top-1/2" delay="-2s" />
           <Chip Icon={Rocket} text="2 live products" sub="Edurown · AlphaStreamTrader" className="-bottom-5 left-4 sm:-left-6" delay="-4s" />
         </motion.div>
       </div>

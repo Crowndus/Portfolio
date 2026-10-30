@@ -94,7 +94,7 @@ export function Skills() {
   );
 }
 
-const covers: Record<string, string> = { AlphaStreamTrader: "/api/img?f=projects/alphastream-cover.jpg", Edurown: "/api/img?f=projects/edurown-cover.jpg", "Diagnosis Reporting System": "/api/img?f=projects/diagnosis-cover.jpg" };
+const covers: Record<string, string> = { AlphaStreamTrader: "/api/img?f=projects/alphastream-cover.jpg", "Diagnosis Reporting System": "/api/img?f=projects/diagnosis-cover.jpg" };
 const pi = [TrendingUp, BookOpen, Microscope, Database, Fingerprint];
 export function Work() {
   return (
@@ -210,7 +210,7 @@ export function Contact() {
     <section id="contact" className={sec}><div className={wrap}>
       <Reveal>
         <h2 className="text-4xl md:text-6xl font-semibold tracking-tight">Let&apos;s <span className="gradient-text">build something.</span></h2>
-        <p className="mt-5 max-w-2xl text-muted">Open to AI engineering roles, research collaborations, and founding-team conversations. Based in Kenya. Working with teams worldwide.</p>
+        <p className="mt-5 max-w-2xl text-muted">Open to roles, research collaborations, and founding-team conversations across technology, data, and impact work. Based in Kenya. Working with teams worldwide.</p>
       </Reveal>
       <div className="mt-12 grid gap-4 sm:grid-cols-2">
         {items.map(({ Icon, title, sub, href }, i) => (
