@@ -16,7 +16,7 @@ export function Footer() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo.png" alt="Stephen Kisangi" className="h-14 w-14 rounded-full shadow-md shadow-accent/30" />
           <p className="font-tag mt-5 max-w-xs text-lg font-medium leading-snug">&ldquo;{site.tagline}&rdquo;</p>
-          <p className="mt-3 text-sm text-muted">Technologist · Founder · Builder of live products</p>
+          <p className="mt-3 text-sm text-muted">Founder · Builder · Growing into AI engineering</p>
           <div className="mt-5"><LiveClock /></div>
         </div>
         <div><p className={h}>Wander around</p><ul className="mt-4 space-y-2 text-sm text-muted">{nav.map(([l, u]) => <li key={u}><a href={u} className="transition hover:text-ink">{l}</a></li>)}</ul></div>

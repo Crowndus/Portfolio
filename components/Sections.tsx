@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUpRight, Award, Code2, Radio, Sparkles, BookOpen, Briefcase, Database, ExternalLink, FileCheck2, Fingerprint, FlaskConical, Github, Linkedin, Mail, MessageCircle, Microscope, Rocket, TrendingUp, Users, Wrench } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Award, BarChart3, Brain, Code2, FileSpreadsheet, Layers, Lightbulb, Radio, Sparkles, BookOpen, Briefcase, Database, ExternalLink, FileCheck2, Fingerprint, FlaskConical, Github, Linkedin, Mail, MessageCircle, Microscope, Rocket, TrendingUp, Users, Wrench } from "lucide-react";
 import { Reveal, Counter, ImageReveal } from "./Motion";
 import { SiFigma, SiGit, SiGithub, SiMysql, SiNextdotjs, SiNodedotjs, SiPandas, SiPhp, SiPostgresql, SiPython, SiReact, SiScikitlearn, SiTailwindcss, SiTensorflow, SiTypescript, SiVercel } from "react-icons/si";
 import { CertCard } from "./CertCard";
@@ -64,6 +64,31 @@ export function About() {
   );
 }
 
+const dv = [
+  { I: Lightbulb, t: "I think like a founder", d: "Spot the gap, build the thing, put it in front of real people, and learn fast from what happens." },
+  { I: Layers, t: "I like the space between fields", d: "The best ideas show up where disciplines meet. My work already spans software, veterinary labs, schools, markets, and community projects." },
+  { I: BarChart3, t: "I start with the data", d: "From 60+ analysis projects to a 1990 to 2023 archive brought online, I want decisions grounded in evidence, not hunches." },
+  { I: Brain, t: "I'm growing into an AI engineer", d: "Python, scikit-learn, and TensorFlow are where I'm building depth, always aimed at problems that matter to real people." },
+];
+export function Drive() {
+  return (
+    <section id="drive" className={sec}><div className={wrap}>
+      <Reveal><H>What drives me</H></Reveal>
+      <div className="grid gap-4 sm:grid-cols-2">
+        {dv.map(({ I, t, d }, i) => (
+          <Reveal key={t} delay={(i % 2) * 0.08} className="h-full">
+            <div className="group h-full rounded-2xl border border-ink/10 bg-surface p-6 transition duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-xl hover:shadow-accent/10">
+              <span className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-accent/15 to-accent2/15 text-accent transition group-hover:-rotate-6 group-hover:scale-110"><I size={22} /></span>
+              <h3 className="mt-4 text-lg font-semibold">{t}</h3>
+              <p className="mt-2 text-muted">{d}</p>
+            </div>
+          </Reveal>
+        ))}
+      </div>
+    </div></section>
+  );
+}
+
 type Ic = React.ComponentType<{ size?: number }>;
 const sk: Record<string, { I: Ic; c: string; d: string }> = {
   Python: { I: SiPython, c: "#3776AB", d: "Data, ML and automation" },
@@ -74,12 +99,14 @@ const sk: Record<string, { I: Ic; c: string; d: string }> = {
   SQL: { I: SiMysql, c: "#4479A1", d: "Data that stays organised" },
   TensorFlow: { I: SiTensorflow, c: "#FF6F00", d: "Deep learning models" },
   "Scikit-learn": { I: SiScikitlearn, c: "#F7931E", d: "Classical machine learning" },
+  Pandas: { I: SiPandas, c: "#8B5CF6", d: "Wrangling and exploring data" },
+  Excel: { I: FileSpreadsheet, c: "#217346", d: "Analysis and reporting" },
 };
 export function Skills() {
   return (
     <section id="skills" className={sec}><div className={wrap}>
       <Reveal><H>What I can do</H><p className="-mt-6 mb-10 max-w-xl text-muted">The tools I reach for when an idea needs to become something real.</p></Reveal>
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-5">
         {skills.map((n, i) => { const { I, c, d } = sk[n]; return (
           <Reveal key={n} delay={(i % 4) * 0.07} className="h-full">
             <div className="group relative h-full overflow-hidden rounded-2xl border border-ink/10 bg-surface p-5 transition duration-300 hover:-translate-y-1.5 hover:border-accent/50 hover:shadow-xl hover:shadow-accent/10">
@@ -210,7 +237,7 @@ export function Contact() {
     <section id="contact" className={sec}><div className={wrap}>
       <Reveal>
         <h2 className="text-4xl md:text-6xl font-semibold tracking-tight">Let&apos;s <span className="gradient-text">build something.</span></h2>
-        <p className="mt-5 max-w-2xl text-muted">Open to roles, research collaborations, and founding-team conversations across technology, data, and impact work. Based in Kenya. Working with teams worldwide.</p>
+        <p className="mt-5 max-w-2xl text-muted">Open to AI and data roles, research collaborations, and founding-team conversations. Tell me what you are building. Based in Kenya. Working with teams worldwide.</p>
       </Reveal>
       <div className="mt-12 grid gap-4 sm:grid-cols-2">
         {items.map(({ Icon, title, sub, href }, i) => (

@@ -1,6 +1,6 @@
 import { Nav } from "@/components/Nav";
 import { ScrollProgress } from "@/components/Motion";
-import { About, Skills, Certs, Contact, Footer, Hero, Marquee, Metrics, Research, Work } from "@/components/Sections";
+import { About, Drive, Skills, Certs, Contact, Footer, Hero, Marquee, Metrics, Research, Work } from "@/components/Sections";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
         <Hero />
         <Metrics />
         <About />
+        <Drive />
         <Skills />
         <Work />
         <Certs />

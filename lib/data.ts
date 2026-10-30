@@ -2,8 +2,8 @@ export const site = {
   name: "Stephen Mathenge Kisangi",
   tagline: "Solving problems, always. We're getting there.",
   eyebrow: "First-Class Honours · BSc Information Technology",
-  roles: ["Technologist & Founder", "Applied AI & Data", "Builder of Live Products", "Systems & Research", "Community Impact Leader"],
-  sub: "I build technology around real problems, from a live consulting platform and a trading product to a veterinary reporting system and a school attendance concept. First-Class Honours in Information Technology, with a record of leading projects on the ground.",
+  roles: ["Founder & Builder", "Growing into an AI Engineer", "Data Analysis & Insight", "Problem Solver Across Disciplines", "Community Impact Leader"],
+  sub: "I'm an entrepreneur at heart and a builder by habit, growing into an AI engineer with data analysis as my foundation. I believe the best solutions sit between disciplines, so I work across software, data, and community impact: live products, research, and projects I've led on the ground.",
   cv: "/Stephen_Kisangi_CV.pdf",
   email: "stephen.crowndus1@gmail.com",
   whatsapp: "+254 792 915655",
@@ -18,11 +18,11 @@ export const metrics: { to: number; suffix: string; prefix?: string; label: stri
   { to: 60, suffix: "+", label: "Research and data projects delivered for international clients" },
 ];
 export const about = [
-  "I'm a technologist with a First-Class Honours degree in Information Technology from Kenya Highlands University, where I was named the best student in the School of Computing and Information Science for the 2024 graduating class. My work moves between software, data, AI, and community-led projects.",
-  "I founded Edurown, an independent consulting platform for research, data and technical content, and I'm building AlphaStreamTrader, a Deriv-integrated trading platform that gives retail traders algorithmic strategies, a risk shield, and copy-trading without the complexity of raw APIs.",
+  "I'm a technologist with a First-Class Honours degree in Information Technology from Kenya Highlands University, where I was named the best student in the School of Computing and Information Science for the 2024 graduating class. I'm growing into an AI engineer, with data analysis as my foundation.",
+  "I think like a founder, and I believe good solutions rarely live inside one discipline. I started Edurown, an independent consulting platform for research, data and technical content, and I'm building AlphaStreamTrader, a Deriv-integrated trading platform that gives retail traders algorithmic strategies, a risk shield, and copy-trading without the complexity of raw APIs.",
   "Before this, I built things that earned their place: a PHP/MySQL diagnosis reporting system backed by both my university panel and RVIL-Kericho, digitized 2,000+ documents spanning three decades, and led a shoe-distribution program that reached 9,457 pupils in Kitui County.",
 ];
-export const skills = ["Python", "TypeScript", "React", "Next.js", "Tailwind", "SQL", "TensorFlow", "Scikit-learn"];
+export const skills = ["Python", "TypeScript", "React", "Next.js", "Tailwind", "SQL", "TensorFlow", "Scikit-learn", "Pandas", "Excel"];
 export const experience = [
   { role: "Founder & Lead", org: "Edurown, Remote / Global", date: "2024 - Present", body: "Built and launched Edurown, an independent consulting platform for research, data analysis and technical content, serving clients and professionals worldwide. Built around a simple idea: consulting should stay direct and transparent, with clear scope, honest timelines and fair pricing. Designed the full product (brand, site, and service workflow) on React 19, TanStack Start, and Tailwind v4." },
   { role: "Freelance IT & AI Consultant", org: "Self-Employed, Remote", date: "Jan 2024 - Present", body: "Delivered 60+ research, data analysis, technical writing, and AI-assisted projects for international clients. Built reports, automation solutions, web content, and data-driven insights, applying AI tools to improve research workflows and productivity. Provided remote IT support, troubleshooting, and digital consulting." },
