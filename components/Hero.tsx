@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { ArrowRight, Award, Download, Github, GraduationCap, Linkedin, Mail, Rocket, Sparkles, type LucideIcon } from "lucide-react";
+import { ArrowRight, Award, Code2, Download, Github, GraduationCap, Linkedin, Mail, MapPin, Rocket, type LucideIcon } from "lucide-react";
 import { Typed } from "./Motion";
 import { site } from "@/lib/data";
 
@@ -30,9 +30,15 @@ export function Hero() {
             <span className="relative flex h-2 w-2"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-live opacity-75" /><span className="relative inline-flex h-2 w-2 rounded-full bg-live" /></span>
             {site.eyebrow}
           </motion.span>
-          <motion.h1 variants={item} className="mt-6 text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl xl:text-7xl">Stephen Mathenge <span className="gradient-text">Kisangi</span></motion.h1>
-          <motion.p variants={item} className="mt-5 flex items-center gap-3 font-mono text-lg sm:text-2xl"><Sparkles size={22} className="shrink-0 text-accent2" /><Typed words={site.roles} /></motion.p>
+          <motion.p variants={item} className="mt-6 flex items-center gap-3 text-base font-semibold sm:text-lg"><span className="h-px w-8 bg-gradient-to-r from-accent to-accent2" />Stephen Mathenge Kisangi</motion.p>
+          <motion.h1 variants={item} className="mt-4 text-4xl leading-[1.1] tracking-tight sm:text-5xl xl:text-6xl">Building <span className="gradient-text">data-driven software</span> and <span className="gradient-text">AI-powered systems.</span></motion.h1>
           <motion.p variants={item} className="mt-6 max-w-xl text-base text-muted sm:text-lg">{site.sub}</motion.p>
+          <motion.div variants={item} className="mt-6 flex flex-wrap gap-2.5">
+            {[[GraduationCap, "BSc IT, First-Class Honours"], [Rocket, "Founder @ Edurown"], [Code2, "Full-Stack & Data"], [MapPin, "Nairobi, Kenya"]].map(([I, l]) => {
+              const Icon = I as LucideIcon;
+              return <span key={l as string} className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-surface/70 px-3.5 py-1.5 text-xs font-medium backdrop-blur"><Icon size={14} className="text-accent" />{l as string}</span>;
+            })}
+          </motion.div>
           <motion.div variants={item} className="mt-8 flex flex-wrap gap-3">
             <a href="#work" className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent to-accent2 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-accent/30 transition hover:scale-[1.03]">See what I&apos;ve built <ArrowRight size={16} className="transition group-hover:translate-x-1" /></a>
             <a href={site.cv} className="inline-flex items-center gap-2 rounded-full border border-ink/15 bg-surface/70 px-6 py-3 text-sm font-medium backdrop-blur transition hover:border-accent/50"><Download size={16} /> Grab my CV</a>
