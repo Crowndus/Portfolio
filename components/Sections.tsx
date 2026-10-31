@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUpRight, Award, BarChart3, Brain, Code2, FileSpreadsheet, Layers, Lightbulb, Quote, Radio, Sparkles, BookOpen, Briefcase, Database, ExternalLink, FileCheck2, Fingerprint, FlaskConical, Github, Linkedin, Mail, MessageCircle, Microscope, Rocket, TrendingUp, Users, Wrench } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Award, BarChart3, Brain, Code2, FileSpreadsheet, Layers, Lightbulb, Target, Radio, Sparkles, BookOpen, Briefcase, Database, ExternalLink, FileCheck2, Fingerprint, FlaskConical, Github, Linkedin, Mail, MessageCircle, Microscope, Rocket, TrendingUp, Users, Wrench } from "lucide-react";
 import { Reveal, Counter, ImageReveal } from "./Motion";
 import { SiFigma, SiGit, SiGithub, SiMysql, SiNextdotjs, SiNodedotjs, SiPandas, SiPhp, SiPostgresql, SiPython, SiReact, SiScikitlearn, SiTailwindcss, SiTensorflow, SiTypescript, SiVercel } from "react-icons/si";
 import { CertCard } from "./CertCard";
@@ -68,23 +68,15 @@ const dv = [
   { I: Lightbulb, t: "I think like a founder", d: "Spot the gap, build the thing, put it in front of real people, and learn fast from what happens." },
   { I: Layers, t: "I like the space between fields", d: "The best ideas show up where disciplines meet. My work already spans software, veterinary labs, schools, markets, and community projects." },
   { I: BarChart3, t: "I start with the data", d: "From 60+ client projects to a 1990 to 2023 archive brought online, I want decisions grounded in evidence, not hunches." },
+  { I: Target, t: "My mission", d: "I am driven by the belief that technology should bridge gaps, not widen them. Whether it is building platforms that give clients fair access to technical expertise, or designing systems that bring agricultural diagnostics to remote farmers, my goal is to engineer tools that create tangible, scalable impact." },
 ];
 export function Drive() {
   return (
     <section id="drive" className={sec}><div className={wrap}>
       <Reveal><H>What drives me</H></Reveal>
-      <Reveal>
-        <div className="relative overflow-hidden rounded-3xl border border-accent/30 bg-gradient-to-br from-accent/10 via-surface to-accent2/10 p-7 sm:p-10">
-          <div className="blob absolute -right-10 -top-10 h-48 w-48 rounded-full bg-accent2/20 blur-3xl" />
-          <Quote size={36} className="relative text-accent" />
-          <p className="relative mt-4 max-w-4xl text-lg font-medium leading-relaxed sm:text-2xl">
-            I am driven by the belief that technology should <span className="gradient-text">bridge gaps, not widen them</span>. Whether it is building platforms that give clients fair access to technical expertise, or designing systems that bring agricultural diagnostics to remote farmers, my goal is to engineer tools that create tangible, scalable impact.
-          </p>
-        </div>
-      </Reveal>
-      <div className="mt-5 grid gap-4 sm:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2">
         {dv.map(({ I, t, d }, i) => (
-          <Reveal key={t} delay={i * 0.08} className="h-full">
+          <Reveal key={t} delay={(i % 2) * 0.08} className="h-full">
             <div className="group h-full rounded-2xl border border-ink/10 bg-surface p-6 transition duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-xl hover:shadow-accent/10">
               <span className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-accent/15 to-accent2/15 text-accent transition group-hover:-rotate-6 group-hover:scale-110"><I size={22} /></span>
               <h3 className="mt-4 text-lg font-semibold">{t}</h3>

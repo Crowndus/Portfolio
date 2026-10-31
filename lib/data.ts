@@ -2,7 +2,7 @@ export const site = {
   name: "Stephen Mathenge Kisangi",
   tagline: "Solving problems, always. We're getting there.",
   eyebrow: "First-Class IT Graduate • Founder • Software Engineer",
-  roles: ["Founder & Builder", "Growing into an AI Engineer", "Data Analysis & Insight", "Problem Solver Across Disciplines", "Community Impact Leader"],
+  roles: ["Founder @ Edurown", "First-Class IT Graduate", "Software Engineer", "Building data-driven software", "Building AI-powered systems", "Full-Stack & Data"],
   sub: "I am a technologist and the Founder of Edurown. I engineer full-stack applications, automate workflows, and transform complex data into actionable insights for global clients.",
   cv: "/Stephen_Kisangi_CV.pdf",
   email: "stephen.crowndus1@gmail.com",
