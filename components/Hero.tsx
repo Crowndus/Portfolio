@@ -62,7 +62,7 @@ export function Hero() {
             <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
           <Chip Icon={GraduationCap} text="First-Class Honours" sub="BSc Information Technology" className="-top-5 left-3 sm:-left-10 sm:top-8" delay="0s" />
-          <Chip Icon={Award} text="Best Student, School of Computing & Information Science (2024)" sub="" className="-right-2 top-[58%] max-w-[15rem] sm:-right-10 sm:top-1/2" delay="-2s" />
+          <Chip Icon={Award} text="Best Student" sub="School of Computing & Information Science (2024)" className="-right-2 top-[58%] sm:-right-10 sm:top-1/2 sm:max-w-[17rem]" delay="-2s" />
           <Chip Icon={Rocket} text="2 live products" sub="Edurown · AlphaStreamTrader" className="-bottom-5 left-4 sm:-left-6" delay="-4s" />
         </motion.div>
       </div>
